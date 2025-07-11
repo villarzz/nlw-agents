@@ -1,3 +1,4 @@
+import { sql } from './db/connection.ts'
 import { fastifyCors } from '@fastify/cors'
 import { fastify } from 'fastify'
 import { serializerCompiler, validatorCompiler, type ZodTypeProvider } from 'fastify-type-provider-zod'
@@ -12,4 +13,6 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
-app.listen({ port: env.PORT })
+app.listen({ port: env.PORT }).then(() => {
+    console.log(`LETS GOU is running on http://localhost:${env.PORT}`)
+})
