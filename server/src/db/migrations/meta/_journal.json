@@ -8,6 +8,13 @@
       "when": 1752255219515,
       "tag": "0000_fair_natasha_romanoff",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1754912256071,
+      "tag": "0001_military_stature",
+      "breakpoints": true
     }
   ]
 }

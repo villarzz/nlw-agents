@@ -1,3 +1,4 @@
+// biome-ignore-all lint/suspicious/useAwait: false positive
 import type { FastifyPluginCallbackZod } from "fastify-type-provider-zod";
 import { db } from "../../db/connection.ts";
 import { schema } from "../../db/schema/index.ts";

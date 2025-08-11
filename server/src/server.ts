@@ -1,4 +1,4 @@
-import { sql } from './db/connection.ts'
+/** biome-ignore-all lint/suspicious/noConsole: oi */
 import { fastifyCors } from '@fastify/cors'
 import { fastify } from 'fastify'
 import { serializerCompiler, validatorCompiler, type ZodTypeProvider } from 'fastify-type-provider-zod'
